@@ -1,0 +1,37 @@
+.feautures {
+  padding: 1px 0 30px;
+  border-radius: 6px;
+  background: url('../img/foxy.png') #eae7de;
+}
+.feautures__list {
+  margin: 15px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.feautures__item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 180px;
+  width: 15%;
+  margin: 0 10px;
+}
+.feautures__pic {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #9dc358;
+}
+.feautures__pic img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translate3d(0, 0, 0);
+}
+.feautures__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}

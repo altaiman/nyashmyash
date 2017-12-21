@@ -1,0 +1,66 @@
+.footer {
+    background: #e9e6dc;
+
+    &__container {
+        padding: 35px 20px 10px;
+        display: table;
+        width: 100%;
+        max-width: @markup;
+        margin: 0 auto;
+    }
+
+    &__cell {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+        border-left: 1px dashed @green;
+
+        &:first-child {
+            border: none;
+        }
+    }
+
+    &__menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        height: 220px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    &__menu-item {
+        margin: 8px 0;
+    }
+
+    &__bot {
+        padding-bottom: 50px;
+        border-top: 1px dashed @green;
+
+        .container {
+            position: relative;
+        }
+    }
+}
+
+.copy {
+    margin: 20px 0 10px;
+}
+
+.develop {
+    position: absolute;
+    right: 20px;
+    top: -10px;
+
+    svg {
+        fill: @green;
+        transition: all .3s;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.alphabet {
+  padding: 30px;
+  border-radius: 3px;
+  border: 2px solid #ebebeb;
+}
+.alphabet__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.alphabet__char {
+  display: inline-block;
+  vertical-align: top;
+}

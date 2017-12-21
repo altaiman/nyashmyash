@@ -1,0 +1,93 @@
+.gallery {
+    width: 100%;
+    max-width: 580px;
+
+    &__big {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: #dcdcdc;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 20px 20px 0;
+        list-style: none;
+        background: #e9e6dc url(../img/foxy.png);
+        border-radius: 6px;
+        font-size: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        border: 2px solid white;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 0 20px 20px 0;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        img {
+            max-height: 100%;
+        }
+
+        &.active {
+            pointer-events: none;
+            border-color: @orange;
+        }
+    }
+}
+
+.gallery_product {
+    .gallery {
+        &__big {
+            background: none;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__list {
+            padding: 0;
+            background: none;
+        }
+
+        &__item {
+            position: relative;
+            width: 105px;
+            height: 105px;
+            background: none;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            margin-right: 32px;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            img {
+                position: absolute;
+                left:50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                max-width: 100%;
+            }
+        }
+    }
+}

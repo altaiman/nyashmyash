@@ -1,0 +1,30 @@
+<div class="tabs">
+    <ul class="tabs__select">
+        <li class="tab"><a href="#nova" class="tab__link">Новинки</a></li>
+        <li class="tab"><a href="#popular" class="tab__link">Популярное</a></li>
+        <li class="tab"><a href="#sale" class="tab__link">Распродажа</a></li>
+    </ul>
+    <div class="tabs__content" data-tab="nova">
+        <ul class="items">
+            @@include('../item/new.html')
+            @@include('../item/new.html')
+            @@include('../item/hit.html')
+            @@include('../item/sale.html')
+            @@include('../item/sale.html')
+        </ul>
+    </div>
+    <div class="tabs__content" data-tab="popular">
+        @@include('../item/hit.html')
+        @@include('../item/hit.html')
+        @@include('../item/hit.html')
+        @@include('../item/hit.html')
+        @@include('../item/hit.html')
+    </div>
+    <div class="tabs__content" data-tab="sale">
+        @@include('../item/sale.html')
+        @@include('../item/sale.html')
+        @@include('../item/sale.html')
+        @@include('../item/sale.html')
+        @@include('../item/sale.html')
+    </div>
+</div>

@@ -1,0 +1,75 @@
+.tabs__select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #5ea009;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+.tabs__content {
+  display: none;
+  margin-top: 50px;
+}
+.tabs_blog {
+  width: 575px;
+}
+.tabs_blog .tabs__select {
+  text-align: left;
+}
+.tabs_blog .life__box .life__pic {
+  height: 350px;
+}
+.tabs_blog .life__box_small {
+  width: 250px;
+}
+.tabs_blog .life__box_small .life__pic {
+  height: 170px;
+}
+.tabs_login .tabs__select {
+  text-align: left;
+}
+.tabs_login .tabs__content {
+  margin-top: 30px;
+}
+.tabs_login .tab {
+  margin-right: 25px;
+  color: black;
+  font-weight: 600;
+  border-bottom: 1px dotted currentColor;
+}
+.tabs_login .tab::before {
+  display: none;
+}
+.tabs_login .tab_selected {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+.tab {
+  display: inline-block;
+}
+.tab::before {
+  color: black;
+  content: '/';
+  margin: 0 8px;
+}
+.tab:first-child::before {
+  display: none;
+}
+.tab__link {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.tab_selected {
+  font-weight: 700;
+  color: #555454;
+}
+.tab_selected .tab__link {
+  border: none;
+  pointer-events: none;
+}
+.tab_selected::before {
+  font-weight: 400;
+}

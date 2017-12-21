@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('components/head/index.html')
+</head>
+
+<body>
+	@@include('components/svg/index.html')
+	@@include('components/header/index.html')
+	<div class="container">
+        <section class="section">
+            @@include('components/breadcrumbs/product.html')
+            <h2 class="section__title">Бриджи для похудения</h2>
+            @@include('components/product/index.html')
+            <h3 class="section__caption">Похожие товары</h3>
+            <ul class="items">
+                @@include('components/item/new.html')
+                @@include('components/item/new.html')
+                @@include('components/item/hit.html')
+                @@include('components/item/sale.html')
+                @@include('components/item/sale.html')
+            </ul>
+        </section>
+	</div>
+
+	@@include('components/footer/index.html')
+
+	<script src="js/libs.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

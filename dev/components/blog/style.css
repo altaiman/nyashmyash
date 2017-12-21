@@ -1,0 +1,19 @@
+.blog {
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.blog__cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.blog__life {
+  min-height: 1057px;
+  padding: 60px 50px 30px;
+  margin-top: 65px;
+  background: #efece4 url(../img/foxy.png);
+}
+.blog__life .life__list {
+  margin-bottom: 100px;
+}

@@ -1,0 +1,49 @@
+.product {
+  display: table;
+  width: 100%;
+}
+.product__cell {
+  display: table-cell;
+  vertical-align: top;
+}
+.product__cell:nth-child(1) {
+  width: 45%;
+  max-width: 542px;
+  padding-right: 40px;
+}
+.product__cell::nth-child(2) {
+  width: 55%;
+}
+.product__info {
+  position: relative;
+  padding: 40px;
+  border-radius: 6px;
+  margin-top: 35px;
+  background: #e9e6dc url(../img/foxy.png);
+}
+.product__roof {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.product__roof p {
+  padding: 15px 0;
+  margin: 0;
+}
+.product__article,
+.product__brand {
+  display: inline-block;
+  vertical-align: top;
+}
+.product__article {
+  padding: 0 30px;
+  margin: 0 15px;
+  height: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: #eb7b2d;
+  color: white;
+  text-align: center;
+}

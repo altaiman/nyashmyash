@@ -1,0 +1,240 @@
+.item {
+    float: left;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 25px;
+    width: 20%;
+    max-width: 248px;
+    height: 445px;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+    vertical-align: top;
+
+    &__main {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__pic {
+        position: relative;
+        text-align: center;
+        height: 190px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &__desc {
+        height: 85px;
+        font-size: 14px;
+        line-height: 1.57;
+        margin: 15px 0;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__bot {
+        text-align: center;
+    }
+
+    &__brand {
+        color: @green;
+        font-weight: 500;
+    }
+
+    &__price {
+        margin: 15px 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__buy {
+        opacity: 0;
+    }
+
+    &:hover {
+        z-index: 33;
+        box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.2);
+
+        .item__buy {
+            opacity: 1;
+        }
+
+        .item__bg {
+            background: white;
+            box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__label {
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        right: 0;
+        width: 64px;
+        padding: 6px 0;
+        font-size: 22px;
+        color: white;
+        font-family: @fontT, sans-serif;
+        font-weight: 600;
+        text-align: center;
+
+        // &::before {
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     width: 0;
+        //     height: 0;
+        //     border: 17px solid transparent;
+        //     border-left-color: white;
+        //     border-left-width: 10px;
+        //     content: '';
+        // }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-top-width: 16px;
+        }
+    
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-bottom-width: 16px;
+        }
+    }
+
+    &__label_new {
+        background: #a0cf31;
+
+        &::before {
+            border-right-color: #a0cf31;
+            border-top-color: #a0cf31;
+        }
+
+        &::after {
+            border-right-color: #a0cf31;
+            border-bottom-color: #a0cf31;
+        }
+    }
+
+    &__label_hit {
+        background: #405fc1;
+
+        &::before {
+            border-right-color: #405fc1;
+            border-top-color: #405fc1;
+        }
+
+        &::after {
+            border-right-color: #405fc1;
+            border-bottom-color: #405fc1;
+        }
+    }
+
+    &__label_sale {
+        background: #eb7b2d;
+
+        &::before {
+            border-right-color: #eb7b2d;
+            border-top-color: #eb7b2d;
+        }
+
+        &::after {
+            border-right-color: #eb7b2d;
+            border-bottom-color: #eb7b2d;
+        }
+    }
+
+    &__counter {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0 !important;
+    }
+
+    &__params {
+        opacity: 0;
+        visibility: hidden;
+        font-size: 13px;
+        text-align: justify;
+
+        .item__buy {
+            width: 130px;
+        }
+
+        &::after {
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            content: '';
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0; top: 0; 
+        padding: 25px;
+    }
+
+    &__select {
+        display: table;
+        width: 100%;
+        margin-bottom: 10px;
+
+        & > span {
+            display: table-cell;
+        }
+
+        .nice-select {
+            height: 24px;
+            line-height: 24px;
+            box-shadow: none;
+            width: 100%;
+            border-radius: 0;
+
+            &.open::after {
+                top: 20px;
+            }
+        }
+    }
+
+    &__select-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.c-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 100px;
+}
+

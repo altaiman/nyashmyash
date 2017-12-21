@@ -1,0 +1,59 @@
+.alphabet {
+    position: relative;
+
+    &__list {
+        margin: 0 0 18px;
+        padding: 0;
+        list-style: none;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__char {
+        display: inline-block;
+        vertical-align: bottom;
+        color: @green;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-right: 3px;
+
+        &.current {
+            font-size: 22px;
+            font-weight: 600;
+            color: @orange;
+            
+            a {
+                pointer-events: none;
+                text-decoration: none;
+            }
+        }
+
+        &.disable {
+            color: #9d9d9d;
+
+            a {
+                pointer-events: none;
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__all {
+        position: absolute;
+        top: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 17px;
+        font-weight: 500;
+        color: @green;
+    }
+}

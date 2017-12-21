@@ -1,0 +1,40 @@
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+
+        &::before {
+            display: inline-block;
+            margin: 0 4px 0 3px;
+            width: 0;
+            height: 0;
+            content: '';
+            border: 3px solid transparent;
+            border-left-color: #e8e4da;
+        }
+
+        &:first-child::before {
+            display: none;
+        }
+
+        a {
+            color: #a3a0a1;
+            border-bottom: 1px dashed currentColor;
+            text-decoration: none;
+        }
+
+        &:last-child {
+            a {
+                pointer-events: none;
+                border: none;
+            }
+        }
+    }
+}

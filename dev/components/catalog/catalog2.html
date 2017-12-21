@@ -1,0 +1,163 @@
+<div class="c-section">
+    <div class="c-section__side">
+        <div class="c-section__side-wrap">
+            <form class="form">
+                <div class="form__block">
+                    <h4 class="form__caption"><span>Цена, р.</span></h4>
+                    <div class="range">
+                        <label class="range__num range__num_from">
+                            <span>от</span>
+                            <input type="text">
+                        </label>
+                        <label class="range__num range__num_to">
+                            <span>до</span>
+                            <input type="text">
+                        </label>
+                        <input class="range__slider" type="range" min="400" max="3200" step="100" value="400">
+                    </div>
+                </div>
+                <div class="form__block">
+                    <h4 class="form__caption" data-toggle="open"><span>Цвет</span></h4>
+                    <div class="toggle">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <div class="checkbox__custom"></div>
+                            <span>Красный</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>Оранжевый</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>Желтый</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>Зеленый</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>Голубой</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block">
+                    <h4 class="form__caption" data-toggle="open"><span>Размер</span></h4>
+                    <div class="toggle">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <div class="checkbox__custom"></div>
+                            <span>XS</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>S</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>M</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>L</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>XL</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>XXL</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__custom"></div>
+                            <span>XXXL</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block">
+                    <h4 class="form__caption" data-toggle="close"><span>Материал</span></h4>
+                    <div class="toggle">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <div class="checkbox__custom"></div>
+                            <span>XS</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block">
+                    <h4 class="form__caption" data-toggle="close"><span>Пол</span></h4>
+                    <div class="toggle">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <div class="checkbox__custom"></div>
+                            <span>XS</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block">
+                    <h4 class="form__caption" data-toggle="close"><span>Бренд</span></h4>
+                    <div class="toggle">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <div class="checkbox__custom"></div>
+                            <span>XS</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__buttons">
+                    <button class="form__btn btn">Найти</button>
+                    <button class="form__btn btn btn_reset">Сбросить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="c-section__content">
+        <div class="c-section__row">
+            <div class="select select_sort">
+                <span>Сортировать по:</span>
+                <select>
+                    <option value="0">цене (по возрастанию)</option>
+                    <option value="1">цене (по убыванию)</option>
+                    <option value="0">цене (по возрастанию)</option>
+                    <option value="1">цене (по убыванию)</option>
+                </select>
+            </div>
+            <div class="select select_show">
+                <span>Показывать:</span>
+                <select>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+        </div>
+        <div class="c-section__row">
+            <ul class="c-items">
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+                @@include('../item/catalog.html')
+            </ul>
+        </div>
+        <div class="c-section__bottom">
+            @@include('../pagination/index.html')
+            <button class="btn btn_more">Показать еще</button>
+        </div>
+    </div>
+</div>

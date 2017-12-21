@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include('components/head/index.html')
+</head>
+
+<body>
+	@@include('components/svg/index.html')
+	@@include('components/header/index.html')
+	<div class="container">
+        <section class="section">
+            @@include('components/breadcrumbs/catalog.html')
+			<h2 class="section__title">Каталог</h2>
+            @@include('components/catalog/catalog.html')
+			
+        </section>
+	</div>
+
+	@@include('components/footer/index.html')
+
+	<script src="js/libs.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

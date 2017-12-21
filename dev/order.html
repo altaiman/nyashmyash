@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('components/head/index.html')
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	@@include('components/svg/index.html')
+	@@include('components/header/index.html')
+	<div class="container">
+        <section class="section">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Оформление заказа</a></li>
+                <li class="breadcrumbs__item"><a href="#">Шаг 1</a></li>
+            </ul>
+            <h2 class="section__title">Оформление заказа</h2>
+			@@include('components/basket/order.html')
+        </section>
+	</div>
+
+	@@include('components/footer/index.html')
+	@@include('components/modals/map.html')
+
+	<script src="js/libs.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

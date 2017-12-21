@@ -1,0 +1,105 @@
+.tabs {
+    &__select {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #5ea009;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__content {
+        display: none;
+        margin-top: 50px;
+    }
+}
+
+.tabs_blog {
+    width: 575px;
+
+    .tabs {
+        &__select {
+            text-align: left;
+        }
+    }
+
+    .life {
+        &__box {
+            .life__pic {
+                height: 350px;
+            }
+        }
+
+        &__box_small {
+            width: 250px;
+
+            .life__pic {
+                height: 170px;
+            }
+        }
+    }
+}
+
+.tabs_login {
+    .tabs {
+        &__select {
+            text-align: left;
+        }
+
+        &__content {
+            margin-top: 30px;
+        }
+    }
+
+    .tab {
+        margin-right: 25px;
+        color: black;
+        font-weight: 600;
+        border-bottom: 1px dotted currentColor;
+    }
+
+    .tab::before {
+        display: none;
+    }
+
+    .tab_selected {
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+    }
+}
+
+.tab {
+    display: inline-block;
+
+    &::before {
+        color: black;
+        content: '/';
+        margin: 0 8px;
+    }
+
+    &:first-child::before {
+        display: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        border-bottom: 1px dotted currentColor;
+    }
+}
+
+.tab_selected {
+    font-weight: 700;
+    color: #555454;
+
+    .tab__link {
+        border: none;
+        pointer-events: none;
+    }
+
+    &::before {
+        font-weight: 400;
+    }
+}

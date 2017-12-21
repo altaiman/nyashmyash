@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include('components/head/index.html')
+</head>
+
+<body>
+	@@include('components/svg/index.html')
+	@@include('components/header/index.html')
+	<div class="container">
+        <section class="section">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Оформление заказа</a></li>
+                <li class="breadcrumbs__item"><a href="#">Корзина</a></li>
+            </ul>
+            <h2 class="section__title">Корзина</h2>
+			@@include('components/basket/index.html')
+        </section>
+	</div>
+
+	@@include('components/footer/index.html')
+
+	<script src="js/libs.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

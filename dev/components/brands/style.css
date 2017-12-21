@@ -1,0 +1,15 @@
+.brands {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.brand {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.brand__logo {
+  padding: 20px 10px;
+  border: 2px solid #ebebeb;
+  margin-bottom: 25px;
+}

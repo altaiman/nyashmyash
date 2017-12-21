@@ -1,0 +1,100 @@
+.menu {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 42px;
+    list-style: none;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+
+    &__item {
+        display: table-cell;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+
+        &:hover {
+            background: #61a217;
+
+            &>.drop {
+                display: block;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        height: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__drop {
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: 0;
+    }
+}
+
+.drop {
+    width: 100%;
+    padding: 15px 0 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);  
+    line-height: 1.4; 
+
+    &__list {
+        width: @markup;
+        padding: 0;
+        height: 480px;
+        margin: 0 auto;
+        color: @color;
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+
+    &__item {
+        width: 288px;
+        padding: 16px 0;
+        font-size: 12px;
+        border-bottom: 1px dashed @green;
+    }
+
+    &__item_more {
+        border: none;
+    }
+    
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__item-l {
+        margin: 15px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item-i {
+        margin: 10px 0;
+    }
+
+    &__item-link {
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: @green;
+    }
+}

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumbs__item::before {
+  display: inline-block;
+  margin: 0 4px 0 3px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 3px solid transparent;
+  border-left-color: #e8e4da;
+}
+.breadcrumbs__item:first-child::before {
+  display: none;
+}
+.breadcrumbs__item a {
+  color: #a3a0a1;
+  border-bottom: 1px dashed currentColor;
+  text-decoration: none;
+}
+.breadcrumbs__item:last-child a {
+  pointer-events: none;
+  border: none;
+}

@@ -1,0 +1,7 @@
+.modal {
+  display: none;
+  padding: 50px;
+  max-width: 100%;
+  min-width: 440px;
+  border-radius: 6px;
+}

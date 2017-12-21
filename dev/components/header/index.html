@@ -1,0 +1,328 @@
+<header class="header">
+    <div class="m-nav">
+        <div class="m-nav__cell">
+            <div class="m-nav__menu">
+                <button class="m-nav__menu-btn"></button>
+                <div class="m-nav__menu-drop">
+                    <div class="m-nav__menu-top">
+                        <div class="city">
+                            <span class="city__current">Москва</span>
+                            <div class="city__choose">
+                                <p>Укажите ваш город</p>
+                                <form class="city__form">
+                                    <input type="text">
+                                    <button class="btn btn_ok" type="submit">ОК</button>
+                                </form>
+                                <button class="close"></button>
+                            </div>
+                        </div>
+                        <div class="auth">
+                            <a href="#" data-open="login" data-type="login" class="link">Вход</a>
+                            <span>/</span>
+                            <a href="#" data-open="login" data-type="register"class="link">Регистрация</a>
+                        </div>
+                    </div>
+                    @@include('../menu/mobile.html')
+                    <ul class="m-nav__menu-bot">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="m-nav__cell">
+            <div class="search search_m">
+                <label class="search__field">
+                    <input placeholder="Поиск" type="text" class="search__field-inp">
+                    <button class="search__btn"></button>
+                </label>
+            </div>
+        </div>
+        <div class="m-nav__cell">
+            <a href="#" class="cart cart_m" data-items="65">
+
+            </a>
+        </div>
+    </div>
+    <div class="header__top">
+        <div class="container">
+            <div class="city">
+                <span class="city__current">Москва</span>
+                <div class="city__choose">
+                    <p>Укажите ваш город</p>
+                    <form class="city__form">
+                        <input type="text">
+                        <button class="btn btn_ok" type="submit">ОК</button>
+                    </form>
+                    <button class="close"></button>
+                </div>
+            </div>
+            <div class="topmenu">
+                <ul class="topmenu__list">
+                    <li class="topmenu__item"><a href="#0" class="link">О компании</a></li>
+                    <li class="topmenu__item"><a href="#1" class="link">Как купить</a></li>
+                    <li class="topmenu__item"><a href="#2" class="link">Оплата и доставка</a></li>
+                    <li class="topmenu__item"><a href="#3" class="link">Блог</a></li>
+                    <li class="topmenu__item"><a href="#4" class="link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="auth">
+                <a href="#" data-open="login" data-type="login" class="link">Вход</a>
+                <span>/</span>
+                <a href="#" data-open="login" data-type="register"class="link">Регистрация</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__main">
+            <div class="header__cell">
+                @@include('../logo/index.html')
+            </div>
+            <div class="header__cell">
+                @@include('../search/index.html')
+            </div>
+            <div class="header__cell">
+                <a href="" class="phone">8 (800) 707-20-88</a>
+                <button class="btn btn_recall">Перезвоните мне</button>
+            </div>
+            <div class="header__cell">
+                <a href="#" class="cart">
+                    <p>В корзине <strong>65</strong> товаров на сумму <strong>100500 руб.</strong></p>
+                    <div class="cart__dropdown">
+                        <ul class="cart__items">
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart__item">
+                                <div class="cart__item-cell">
+                                    <div class="cart__item-pic"><img src="img/item.jpg" alt=""></div>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <p class="cart__item-name">PEOPLE ORGANIC Лучшие Рецепты Мира Бальзам для волос Японский шелк, 350 мл</p>
+                                </div>
+                                <div class="cart__item-cell">
+                                    <span class="cart__item-price">120 руб.</span>
+                                    <div class="counter counter_cart">
+                                        <label class="counter__label">
+                                            <input type="text" class="counter__input" value="1" data-max="99">
+                                            <button class="counter__btn counter__btn_up"></button>
+                                            <button class="counter__btn counter__btn_down"></button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <div class="cart__sum">
+                            <span>Товаров на сумму</span><strong>100 500 руб.</strong>
+                        </div>
+                        <button class="btn btn_yelwide">Оформить заказ</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__bot">
+        <div class="container">
+            @@include('../menu/index.html')
+        </div>
+    </div>
+</header>

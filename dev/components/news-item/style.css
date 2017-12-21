@@ -1,0 +1,10 @@
+.news-item__label.label {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-left: 8px;
+}
+.news-item__date {
+  font-size: 13px;
+  font-weight: 500;
+}

@@ -1,0 +1,44 @@
+.b-section {
+  display: table;
+  vertical-align: top;
+}
+.b-section__main {
+  display: table-cell;
+  vertical-align: top;
+  width: 71%;
+  max-width: 880px;
+}
+.b-section__side {
+  display: table-cell;
+  vertical-align: top;
+  width: 29%;
+  padding-left: 50px;
+}
+.b-section__block {
+  background: #efece4 url(../img/foxy.png);
+  border-radius: 6px;
+}
+.check__block {
+  padding: 20px 20px 10px 36px;
+  border-bottom: 1px dashed black;
+}
+.check__caption {
+  display: block;
+  margin: 20px 0 40px;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.check__line {
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+.check__line strong {
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+.check__line_center {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+.pagination {
+    margin: 40px 0;
+    font-size: 14px;
+    text-align: center;
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__pages {
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0 15px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__page {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 16px;
+        margin: 0 15px;
+
+        &.active {
+            &::before {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                border: 1px solid @orange;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                content: '';
+            }
+
+            a {
+                pointer-events: none;
+                text-decoration: none;
+            }
+        }
+    }
+}

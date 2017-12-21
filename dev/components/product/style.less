@@ -1,0 +1,167 @@
+.product {
+    display: table;
+    width: 100%;
+    border-bottom: 1px dashed @green;
+    
+    &__cell {
+        display: table-cell;
+        vertical-align: top;
+        
+        &:nth-child(1) {
+            width: 45%;
+            max-width: 542px;
+            padding-right: 40px;
+        }
+
+        &::nth-child(2) {
+            width: 55%;
+        }
+    }
+
+    &__info {
+        position: relative;
+        padding: 30px 0 50px 40px;
+        border-radius: 6px;
+        margin-top: 35px;
+        background: #e9e6dc url(../img/foxy.png);
+    }
+
+    &__info-list {
+        margin: 0 0 15px;
+        padding: 0;
+        list-style: none;
+        font-size: 13px;
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__info-cell {
+        display: table-cell;
+        vertical-align: top;
+        
+        span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        a {
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 1.5;
+        }
+    }
+
+    &__roof {
+        position: absolute;
+        left: 0;
+        top: -35px;
+        line-height: 1;
+        white-space: nowrap;
+
+        p {
+            padding: 15px 0;
+            margin: 0;
+        }
+    }
+
+    &__article, &__brand {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__article {
+        padding: 0 30px;
+        margin: 0 15px;
+        height: 40px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #eb7b2d;
+        color: white;
+        text-align: center;
+    }
+
+    &__brand {
+        a {
+            display: inline-block;
+            margin-left: 5px;
+            color: @green;
+        }
+    }
+
+    &__select {
+        display: inline-block;
+        margin-right: 30px;
+
+        & > span {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__buy {
+        width: auto !important;
+        padding-left: 70px;
+        padding-right: 30px;
+        margin-right: 10px;
+
+        &::before {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            width: 24px;
+            height: 22px;
+            background: url(../img/p-cart.png) no-repeat;
+        }
+    }
+
+    &__description {
+        padding: 50px 51px 50px;
+
+        h4 {
+            margin: 0 0 40px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0 0 15px;
+            font-size: 14px;
+            line-height: 1.714;
+        }
+    }
+}
+
+.price {
+    margin: 25px 0;
+
+    &__old {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 20px;
+        padding: 0 8px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: @orange;
+        }
+    }
+
+    &__now {
+        display: inline-block;
+        font-size: 36px;
+        font-weight: bold;
+        color: #555454;
+    }
+}

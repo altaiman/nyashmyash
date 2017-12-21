@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include('components/head/index.html')
+</head>
+
+<body>
+	@@include('components/svg/index.html')
+	@@include('components/header/index.html')
+	<div class="container">
+		@@include('components/showcase/index.html')
+		@@include('components/nova/index.html')
+		@@include('components/catalog/index.html')
+		@@include('components/life/index.html')
+		@@include('components/feautures/index.html')
+		<section class="section">
+			<div class="section__cell">
+				<div class="about">
+					<h4 class="caption">Магазин натуральной косметики</h4>
+					<p class="text">
+						Универмаг красоты и здоровья «Няшки&Милашки» - это рай для женщин, ведущих активный, здоровый образ жизни и кавалеров, желающих порадовать подарками своих любимых!<br>
+						Наш универмаг привлекает клиентов широким и постоянно обновляющимся ассортиментом, приятным сервисом и выгодными ценовыми предложениями.
+					</p>
+				</div>
+			</div>
+			<div class="section__cell">
+				@@include('components/subscribe/index.html')
+			</div>
+		</section>
+	</div>
+
+	@@include('components/footer/index.html')
+
+	<script src="js/libs.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
